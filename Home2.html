@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  position:fixed;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  
+}
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+.header a.active {
+  background-color: red;
+  color: white;
+}
+.header-right a:hover{
+ background-color: red;
+  color: white;
+  }
+.header-right {
+  float: right;
+ 
+ 
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit:cover;
+}
+    </style>
+</head>
+
+<body>
+ <video autoplay muted loop id="myVideo">
+  <source src="oo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="header">
+  <a class="logo"> STUDENT REGISTRATION</a>
+  <div class="header-right">
+  <a></a>
+    <a href="Home2.html"class="active" >Home</a>
+    <a href="New_Course.html" style="color:white">Add Student</a>
+    <a href="Update.html" style="color:white">Modify Student</a>
+	<a href="Remove.html" style="color:white">Remove Student</a>
+	<a href="Read.php" style="color:white" >View Details</a>
+  </div>
+</div>
+
+</body>
+
+</html>

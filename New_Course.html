@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('p.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+.header a.active {
+  background-color: red;
+  color: white;
+}
+.header-right a:hover{
+ background-color: red;
+  color: white;
+  }
+.header-right {
+  float: right;
+ 
+}
+h1{
+color:red;
+
+}
+input[type=submit]:hover{
+color:white;
+background-color:#01F9C6;}
+
+input[type=submit]{
+width:100%;
+background-color:#46C7C7;
+color:white;
+}
+input[type=reset]{
+width:100%;
+background-color: #46C7C7;
+color:white;
+}
+input[type=reset]:hover{
+color:white;
+background-color:#01F9C6;
+}
+.h{
+color:white;}
+    </style>
+</head>
+
+<body>
+ 
+   <div class="header">
+  <a class="logo"> STUDENT DETAILS</a>
+  <div class="header-right">
+    <a href="Home2.html" >Home</a>
+    <a href="New_Course.html" style="color:white" class="active">Add Student</a>
+    <a href="Update.html" style="color:white">Modify Student</a>
+	<a href="Remove.html" style="color:white">Remove Student</a>
+	<a href="Read.php" style="color:white" >View Details</a>
+  </div>
+</div>
+<CENTER>
+    <div class="Container h">
+        <form action="Save.php" method="POST">
+            <h3>Student Registration Details
+                <hr>
+            </h3>
+			
+          ID:<BR>
+          <input  style="padding:10px; border-color:red;width:20%" type="text" name="dd"  placeholder="id" required>
+       <br><br>
+		<div>
+          NAME:<br>
+          <input  style="padding:10px;border-color:red;width:20%" type="text" name="aa" placeholder=" name" required>
+        </div><br><br>
+       
+      
+		
+		Phone:
+		
+		<input  style="padding:10px;border-color:red;" type="text" size="2" value="+91" >
+		<input  style="padding:10px;border-color:red;width:12%" type="text" size="10" maxlength="10" name="kk" ><br><br>
+		
+		
+		 Address:<br>
+		<textarea style="padding:10px;border-color:red; width:20%" cols="100" rows="10" value="address" name="dk"></textarea><br><br>
+       
+       <input style="padding:10px;border-color:red; width:10%;" type="submit" value="submit">
+		  <input style="padding:10px;border-color:red; width:10%;" type="reset" value="cancel">
+        </form>
+   </div></CENTER><br><br>
+</body>
+
+</html>
